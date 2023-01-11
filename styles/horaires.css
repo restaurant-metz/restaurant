@@ -1,50 +1,39 @@
 .body-container .horaires {
-    /*
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    */
-    background-color: antiquewhite;
-    font-weight: 500;
-    padding: 40px 15px;
-    height: auto;
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.horaires-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 1fr;
-    column-gap: 10%;
-    row-gap: 20px;
-    min-width: 20%;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 100px 1fr;
+
 }
 
-.horaires-grid h2 {
+.horaires .titre-horaires {
     grid-column-start: 1;
     grid-column-end: 3;
-    text-align: center;
 }
 
-.horaires ul {
+
+
+.jours, .heures, .titre-horaires {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 100%; 
+    justify-items: center;
     align-items: center;
+    row-gap: 20px;
 }
 
-.horaires ul.jours {
-    justify-items: center;
-    height: 100%;
-    row-gap: 30px;
+
+@media screen and (max-width: 365px) {
+    .horaires h2 {
+        font-size: 2vh;
+    }
+    .horaires p {
+        font-size: 1.5vh;
+    }
 }
 
-.horaires ul.heures {
-    justify-items: center;
-    height: 100%;
-    row-gap: 30px;
+@media screen and (max-width: 300px) {
+    .horaires h2 {
+        font-size: 1.6vh;
+    }
+    .horaires p {
+        font-size: 1.2vh;
+    }
 }

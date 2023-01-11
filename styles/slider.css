@@ -17,7 +17,7 @@ label{
   overflow: hidden;
   max-height: clamp(500px, 80vh, 1000px);
   margin:2rem auto;
-  height: 80vh;
+  height: 50vh;
 }
     
 .slideshow> * {

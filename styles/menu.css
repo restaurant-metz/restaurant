@@ -4,22 +4,21 @@ body{
   }
   .menu{
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
     grid-gap: 20px 12px;
     margin-bottom: 20px;
   }
-  .heading.apropos,.heading.horaires,.heading.nos-services,.heading.paiements{
-    margin-bottom: 300px;
-  }
+
   .heading{
     background-color: #ff9742;
     color: #ffffff;
     margin-bottom: 0px;
-    padding: 60px 0 60px 0;
+    padding: 50px 0px;
     grid-column: 1/-1;
     text-align: center;
+    display: inline-block;
   }
   .heading>h1{
     font-weight: 400;
@@ -85,7 +84,7 @@ body{
 @media screen and (max-width: 400px){
 
   .menu{
-    grid-template-columns: repeat( auto-fit, minmax(280px,1fr));
+    grid-template-columns: repeat( auto-fit, minmax(270px,1fr));
   }
   
 }

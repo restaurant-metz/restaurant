@@ -4,17 +4,39 @@
     padding: 30px; 
     display: flex;
     flex-direction: column; 
-    gap: 20%;
-    height: 40vh;
+    gap: 5vh;
+    height: 30vh;
     justify-content: center;
 }
 
 .paiements p {
     letter-spacing: 1px;
+
+}
+
+.paiements h2 {
+    letter-spacing: 1px;
+
 }
 
 .paiements-logos {
     display: flex; 
     justify-content: space-around;
     align-items: center;
+}
+
+@media screen and (max-width:400px) {
+
+    .paiements p {
+    font-size: 0.8rem;
+    }
+
+    .paiements h2 {
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+
+    .paiements {
+        gap: 5%;  
+    }
 }
