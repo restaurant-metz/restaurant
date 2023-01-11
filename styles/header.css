@@ -1,0 +1,165 @@
+.nav-container {
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: auto;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+.nav-buttons {
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 3%;
+}
+
+.nav-buttons button{
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-left: 0px;
+    font-size: 15px;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
+    background-color: rgb(120, 255, 138);
+    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in;
+}
+
+
+.itineraire {
+    margin-right: 12px;
+}
+
+.nav-buttons button a:hover { 
+    color: rgb(100, 198, 255);
+}
+
+.nav-buttons button:hover { 
+    background-color: #333;
+    color: rgb(95, 255, 255);
+    cursor: pointer;
+}
+
+.nav-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+.nav-container ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.nav-container ul li a:hover {
+    color: rgb(95, 255, 255);
+    box-shadow: 0px 10px 0px rgba(100, 198, 255, 0.2);
+}
+
+.nav-container ul li a:active {
+    opacity: 0.5;
+    color: rgb(95, 255, 255);
+}
+
+
+.nav-container .logo {
+    height: 60px;
+}
+
+.logo-div {
+    height: 60px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    min-width: auto;
+}
+
+.logo-div p {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.btns {
+    display: flex; align-items: center; justify-content: center; column-gap: 3%;
+}
+
+.nav-buttons .itineraire-button {
+
+    z-index: 10;
+}
+
+.nav-buttons a {
+    z-index: 10;
+}
+
+@media screen and (max-width: 900px){
+
+
+    .nav-container {
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 10px;
+    }
+
+    .nav-buttons {
+        position: relative;
+    }
+
+    .nav-buttons .itineraire-button {
+        position: fixed;
+        right: 0;
+        transform: rotate(90deg);
+        padding-top: 10px;
+        bottom: 52.5vh;
+    }
+
+    .nav-buttons .appel-button {
+        position: fixed;
+        left: 0;
+        bottom: 50vh;
+        transform: rotate(-90deg);
+        padding-top: 10px;
+    }
+
+    .nav-buttons .appel-button img{
+
+        transform: rotate(90deg);
+    }
+
+    .nav-buttons .itineraire-button img{
+
+        transform: rotate(-90deg);
+    }
+
+    .nav-buttons button{
+        font-size: 1.2rem;
+    }
+
+    .btns {
+        width: 30px;
+        column-gap: 20%;
+    }
+
+}

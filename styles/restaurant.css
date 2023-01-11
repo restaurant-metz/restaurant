@@ -1,0 +1,54 @@
+.body-container .restaurant {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+}
+
+.restaurant-photo {  
+    position: absolute;
+    top: 15;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.restaurant-photo img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.body-container .restaurant p{
+    max-width: 70%;
+    width: 400px;
+    line-height: 1.5rem;
+    color: white;
+    font-weight: 500;
+    z-index: 2;
+    text-align: center;
+}
+
+.body-container .restaurant h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    z-index: 2;
+    text-align: center;
+    max-width: 80%;
+}
+
+
+.restaurant-photo {
+
+}

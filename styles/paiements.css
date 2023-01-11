@@ -1,0 +1,20 @@
+.paiements {
+    background-color: beige; 
+    text-align: center;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 20%;
+    height: 40vh;
+    justify-content: center;
+}
+
+.paiements p {
+    letter-spacing: 1px;
+}
+
+.paiements-logos {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}

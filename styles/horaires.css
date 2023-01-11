@@ -1,0 +1,50 @@
+.body-container .horaires {
+    /*
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    */
+    background-color: antiquewhite;
+    font-weight: 500;
+    padding: 40px 15px;
+    height: auto;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.horaires-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    column-gap: 10%;
+    row-gap: 20px;
+    min-width: 20%;
+}
+
+.horaires-grid h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.horaires ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%; 
+    align-items: center;
+}
+
+.horaires ul.jours {
+    justify-items: center;
+    height: 100%;
+    row-gap: 30px;
+}
+
+.horaires ul.heures {
+    justify-items: center;
+    height: 100%;
+    row-gap: 30px;
+}
