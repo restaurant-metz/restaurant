@@ -74,7 +74,7 @@ ul li{
     color: white;
     text-decoration: none;
     transition: all 0.5s;
-    font-size: max(0.7rem, 15px);
+    font-size: 1rem;
 }
 
 .nav-container ul li a:hover {
@@ -96,15 +96,17 @@ ul li{
     height: 7vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px; 
     min-width: auto;
     padding-right: 50px;
 }
 
 .logo-div p {
-    font-size: 1.2rem;
-    color: white;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
     font-weight: 600;
+    width: auto;
 }
 
 .btns {
@@ -173,12 +175,16 @@ ul li{
 
     .nav-container .logo-div {
         padding-right: 0px;
-
     }
 
     .nav-container {
         flex-direction: column;
         row-gap: 15px;
     }
+
+    .logo-div p {
+        font-size: 1rem;
+    }
+
 
 }
