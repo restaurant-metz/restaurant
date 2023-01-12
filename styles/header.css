@@ -98,15 +98,13 @@ ul li{
     align-items: center;
     justify-content: center;
     gap: 15px; 
-    min-width: auto;
-    padding-right: 50px;
+    padding-right: 40px;
 }
 
 .logo-div p {
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
     font-weight: 600;
-    width: auto;
 }
 
 .btns {
