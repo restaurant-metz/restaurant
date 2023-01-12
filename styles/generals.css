@@ -9,6 +9,17 @@
 body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     min-height: 100vh;
+    min-width: 100%;
+}
+
+.body-div {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.all-content {
+    min-height: 100vh;
+    min-width: 100%;
 }
 
 .btn {

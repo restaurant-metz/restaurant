@@ -114,7 +114,10 @@ ul li{
 }
 
 .btns {
-    display: flex; align-items: center; justify-content: center; column-gap: 3%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    column-gap: 3%;
 }
 
 .nav-buttons .itineraire-button {
@@ -133,10 +136,6 @@ ul li{
         justify-content: center;
         gap: 10px;
         padding: 10px 10px;
-    }
-
-    .nav-buttons {
-        position: relative;
     }
 
     .nav-buttons .itineraire-button {
