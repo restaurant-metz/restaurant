@@ -1,17 +1,17 @@
 .paiements {
     background-color: beige; 
     text-align: center;
-    padding: 30px; 
+    padding: 50px 30px; 
     display: flex;
     flex-direction: column; 
     gap: 5vh;
-    height: 30vh;
+    height: auto;
     justify-content: center;
+    width: 100%;
 }
 
 .paiements p {
-    letter-spacing: 1px;
-
+    font-size: 1.3vh;
 }
 
 .paiements h2 {
@@ -28,15 +28,14 @@
 @media screen and (max-width:400px) {
 
     .paiements p {
-    font-size: 0.8rem;
+    font-size: 1.2vh;
     }
 
     .paiements h2 {
-        letter-spacing: 1px;
         font-size: 1rem;
     }
 
     .paiements {
-        gap: 5%;  
+        gap: 5vh;  
     }
 }

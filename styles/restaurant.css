@@ -33,7 +33,8 @@
 .body-container .restaurant p{
     max-width: 70%;
     width: 400px;
-    line-height: 3vh;
+    font-size: 1.7vh;
+    line-height: 4vh;
     color: white;
     font-weight: 500;
     z-index: 2;
@@ -43,7 +44,7 @@
 .body-container .restaurant h1 {
     color: white;
     font-weight: 700;
-    font-size: 5vh;
+    font-size: 6.5vw;
     z-index: 2;
     text-align: center;
     max-width: 90%;
