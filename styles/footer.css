@@ -1,11 +1,13 @@
-footer {
+.footer {
     background-color: #333;
     color: aliceblue; 
-    display: flex; 
     align-items: center; 
     justify-content: center;
     height: 100%;
     width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    row-gap: 20px;
 }
 
 .footer-div {
@@ -14,4 +16,26 @@ footer {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.liens-footer-div{
+    display: flex; 
+    column-gap: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(255, 208, 120);
+    font-size: 12px;
+    transition:  color 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: wheat;
+    font-size: 12px;
+}
+
+footer a:active {
+    opacity: 0.6;
 }
