@@ -20,22 +20,21 @@
 
 .liens-footer-div{
     display: flex; 
-    column-gap: 20px;
+    width: 60%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
 .footer a {
     text-decoration: none;
     color: rgb(255, 208, 120);
-    font-size: 12px;
+    font-size: 10px;
     transition:  color 0.3s;
 }
 
 footer a:hover {
     text-decoration: underline;
     color: wheat;
-    font-size: 12px;
 }
 
 footer a:active {
