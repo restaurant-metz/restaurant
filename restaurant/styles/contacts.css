@@ -1,12 +1,20 @@
+.contact-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contacts {
-    padding: 20px; 
-    display: flex; flex-direction: column;
+    padding: 40px 0px; 
+    background-color: rgb(219, 253, 255);
+    font-size: 1.8vh;
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1; 
+    flex-basis: 500px;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    row-gap: 30px;
-    background-color: azure;
-    font-size: 1.5vh;
+    row-gap: 40px;
+    height: auto;
 }
 
 .parking {
@@ -14,4 +22,27 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: auto;
+}
+
+.parking-logo {
+    width: 40px;
+}
+
+.bus-logo {
+    width: 50px; 
+    padding-right: 10px;
+}
+
+.maps-div {
+    flex-grow: 1;
+    flex-basis: 600px;   
+    display: block;
+}
+
+
+.iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
 }

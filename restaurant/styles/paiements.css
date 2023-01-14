@@ -1,41 +1,24 @@
 .paiements {
     background-color: beige; 
-    text-align: center;
-    padding: 50px 30px; 
+    padding: 50px 20px; 
     display: flex;
-    flex-direction: column; 
-    gap: 5vh;
-    height: auto;
+    flex-direction: column;
+    align-items: center; 
+    gap: 50px;
     justify-content: center;
-    width: 100%;
 }
 
 .paiements p {
-    font-size: 1.3vh;
-}
-
-.paiements h2 {
-    letter-spacing: 1px;
-
+    font-size: 1.7vh;
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
 }
 
 .paiements-logos {
     display: flex; 
     justify-content: space-around;
     align-items: center;
-}
-
-@media screen and (max-width:400px) {
-
-    .paiements p {
-    font-size: 1.2vh;
-    }
-
-    .paiements h2 {
-        font-size: 1rem;
-    }
-
-    .paiements {
-        gap: 5vh;  
-    }
+    width: 80%;
+    max-width: 1000px;
 }
