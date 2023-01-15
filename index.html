@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/profile.css">
   <title>Portfolio</title>
@@ -41,7 +40,7 @@
   
         <div class="infos-div">
           <div class="infos">
-            <h1>Je développe votre site web</h1>
+            <div  id="text">Je développe votre site web</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sed.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem expedita voluptas obcaecati ad aut quaerat, itaque quisquam, minus a error quis laborum harum fuga. Ex ullam nostrum culpa sit cum!</p>
             <div class="button-div">
@@ -62,4 +61,21 @@
     </div>
   </div>
 </body>
+<script>
+  var text = document.getElementById('text');
+  var splitText = text.innerText.split('');
+
+  text.innerHTML = '';
+    i = 0
+    setInterval(function(){
+      AjoutDeLettre()}
+      , 100 )
+
+  function AjoutDeLettre(){
+    if(i < splitText.length){
+      text.innerHTML += splitText[i];
+      i++;
+    }
+  }
+</script>
 </html>

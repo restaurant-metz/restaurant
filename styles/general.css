@@ -35,3 +35,24 @@ body {
   min-height: 100vh;
 }
 
+#text {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+#text:after{
+  content: "";
+  animation: clignote 0.7s infinite linear;
+  width: 2px;
+  height: 3rem;
+  display: inline-block;
+  background: rgb(14, 15, 22);
+}
+@keyframes clignote {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
