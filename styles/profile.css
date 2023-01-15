@@ -61,18 +61,21 @@
 
 
 .infos-div {
+  width: auto;
+  max-width: 450px;
   text-align: center;
   color: rgb(255, 255, 255);
-  align-self: auto;
 }
 
 .infos {
-  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   row-gap: 50px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .button-div button {
@@ -94,6 +97,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  row-gap: 15px;
 }
 
 .button-div button:hover {
