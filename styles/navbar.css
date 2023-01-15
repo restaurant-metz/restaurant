@@ -43,6 +43,12 @@
   padding: 8px 16px;
 }
 
+.a-propos {
+  color: rgb(103, 255, 197);
+  background-color: rgb(110, 110, 110);
+  border-radius: 30px;
+}
+
 .navbar ul li a:hover {
   color: rgb(103, 255, 197);
   background-color: rgb(110, 110, 110);
