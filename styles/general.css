@@ -13,3 +13,12 @@ html {
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
+
+.all-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 35px;
+}
