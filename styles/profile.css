@@ -8,6 +8,7 @@
   max-width: 390px;
   background-color: rgb(235, 218, 195);
   height: 550px;
+  border-radius: 20px;
 }
 
 .photo {
@@ -53,6 +54,8 @@
   align-items: center;
   justify-content: center;
   padding: 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .social-div img{

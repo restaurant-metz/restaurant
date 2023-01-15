@@ -3,13 +3,19 @@
 }
 
 .footer {
-  text-align: center;
   color: white;
   padding: 30px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 12px;
 }
 
 .body-div {
@@ -21,4 +27,19 @@
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  color: rgb(177, 177, 177);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a:active {
+  opacity: 0.7;
 }
