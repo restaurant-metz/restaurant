@@ -7,7 +7,7 @@
   margin: 0 auto;
   width: 100%;
   width: 350px;
-  background-color: rgb(235, 218, 195);
+  background-color: rgb(248, 236, 219);
   border-radius: 50px;
   position: relative;
   padding-bottom: 65px;
@@ -17,10 +17,10 @@
   width: 205px;
   height: 205px;
   display: block;
-  border: 1px solid rgb(224, 224, 224);
   border-radius: 100%;
   object-fit: contain;
   margin: 25px 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -123,7 +123,7 @@
   border-radius: 25px;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
   padding: 20px;
-  background-color: rgb(235, 218, 195);
+  background-color: rgb(248, 236, 219);
 }
 
 .bloc h2, .bloc h3, .bloc p{
