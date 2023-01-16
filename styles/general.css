@@ -44,7 +44,7 @@ body {
 
 #text {
   font-weight: 600;
-  color: black;
+  color: rgba(255, 255, 255, 0.952);
   max-width: 600px;
   width: 100%;
   font-size: 26px;
@@ -75,9 +75,11 @@ body {
 
 .social {
   position: relative;
-  height: 250px;
 }
 
+.item.bloc {
+  padding-bottom: 80px;
+}
 
 input[type=text], textarea, input[type=email] {
   width: 100%;
@@ -119,10 +121,6 @@ input[type=submit]:hover {
 
   /* redéfinition 400 + 2*20 */
   margin:0 auto;
-}
-.titre-formulaire  {
-  color: #ffc800;
-  width: 100%;
 }
 
 .form {

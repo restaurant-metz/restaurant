@@ -7,7 +7,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 350px;
-  background-color: rgb(248, 236, 219);
+  background-color: rgba(0, 0, 0, 0.062);
   border-radius: 50px;
   position: relative;
   padding-bottom: 65px;
@@ -20,7 +20,7 @@
   border-radius: 100%;
   object-fit: contain;
   margin: 25px 0px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.212);
 }
 
 
@@ -123,7 +123,7 @@
   border-radius: 25px;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
   padding: 20px;
-  background-color: rgb(248, 236, 219);
+  background-color: rgba(255, 255, 255, 0.548);
 }
 
 .bloc h2, .bloc h3, .bloc p{
