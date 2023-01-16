@@ -42,7 +42,7 @@
 }
 
 .divider {
-  height: 3px;
+  height: 2px;
   border-radius: 100px;
   background-color: black;
   width: 25%;
@@ -140,4 +140,13 @@
 .bloc p {
   padding-bottom: 20px;
   font-weight: 500;
+}
+
+.diviseur {
+  height: 2px; 
+  background-color: black;
+  width: 33%; 
+  margin: 0 auto; 
+  margin-bottom: 30px; 
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
 }
