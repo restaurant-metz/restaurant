@@ -75,3 +75,17 @@
     padding-right: 0;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .navbar-div{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+  .body-div {
+    padding-top: 70px;
+  }
+}
