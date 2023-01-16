@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="../styles/general.css">
   <link rel="stylesheet" href="../styles/navbar.css">
   <link rel="stylesheet" href="../styles/footer.css">
-  <link rel="icon" type="image/png" href="medias/favicon.png"/>
+  <link rel="stylesheet" href="../styles/profile.css">
+  <link rel="icon" type="image/png" href="../medias/favicon.png"/>
   <title>Exemples de projets de création de sites web pour les commerçants de Metz</title>
 </head>
 <body>
@@ -46,4 +47,21 @@
     </div>
   </div>
 </body>
+<script>
+  var text = document.getElementById('text');
+  var splitText = text.innerText.split('');
+
+  text.innerHTML = '';
+    i = 0
+    setInterval(function(){
+      AjoutDeLettre()}
+      , 100 )
+
+  function AjoutDeLettre(){
+    if(i < splitText.length){
+      text.innerHTML += splitText[i];
+      i++;
+    }
+  }
+</script>
 </html>
