@@ -31,9 +31,15 @@ body {
   width: 100%;
   height: 100%;
   max-width: 1200px;
-  background-color: #e4ceb6;
-  padding: 40px 30px 165px 30px;
+  padding: 90px 30px 165px 30px;
   min-height: 100vh;
+
+
+  background: rgb(223,255,157);
+  background: -moz-linear-gradient(to bottom, rgb(131, 194, 231) 0%, rgb(138, 235, 194) 100%);
+  background: -webkit-linear-gradient(to bottom, rgb(131, 194, 231) 0%, rgb(138, 235, 194) 100%);
+  background: linear-gradient(to bottom, rgb(131, 194, 231) 0%, rgb(138, 235, 194) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dfff9d",endColorstr="#ffbb7e",GradientType=1);
 }
 
 #text {
@@ -69,7 +75,7 @@ body {
 
 .social {
   position: relative;
-  height: 230px;
+  height: 250px;
 }
 
 
@@ -110,6 +116,7 @@ input[type=submit]:hover {
   padding:20px;
   width: 100%;
   max-width: 500px;
+
   /* redéfinition 400 + 2*20 */
   margin:0 auto;
 }
