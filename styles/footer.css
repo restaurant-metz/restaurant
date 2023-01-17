@@ -1,8 +1,12 @@
-.footer-div {
-  background-color: rgb(51, 51, 51);
+.footer{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 0.952);
 }
 
-.footer {
+.footer-div {
   color: white;
   padding: 30px;
   width: 100%;
@@ -16,17 +20,6 @@
   align-items: center;
   justify-content: center;
   row-gap: 12px;
-}
-
-.body-div {
-  position: relative;
-}
-
-.footer-div{
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
 }
 
 .footer a {

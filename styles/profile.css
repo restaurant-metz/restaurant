@@ -87,7 +87,7 @@
   padding-bottom: 30px;
 }
 
-.button-div button {
+.buttons button {
   padding: 16px 32px;
   width: 175px;
   border: none;
@@ -100,7 +100,7 @@
   transition: color 0.2s, background-color 0.2s;
 }
 
-.button-div {
+.buttons {
   display: flex;
   column-gap: 16px;
   flex-wrap: wrap;
@@ -109,13 +109,13 @@
   row-gap: 16px;
 }
 
-.button-div button:hover {
+.buttons button:hover {
   color: rgb(255, 255, 255);
   background-color: #ecb279;
   cursor: pointer;
 }
 
-.button-div button:active {
+.buttons button:active {
   opacity: 0.7;
 }
 

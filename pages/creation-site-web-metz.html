@@ -12,95 +12,77 @@
   <title>Services de création de sites web sur mesure pour les commerçants de Metz</title>
 </head>
 <body>
-  <div class="body-div">
-    <header class="navbar-div">
+  
+    <header class="header">
       <nav class="navbar">
-        <a href="#" class="name">Hasan BASBUNAR</a>
+        <a href="https://www.hasanbasbunar.fr" class="name">Hasan BASBUNAR</a>
         <ul>
           <li><a href="../index.html" class="link">A propos</a></li>
-          <li><a href="../pages/creation-site-web-metz.html" class="link page-courant">Services</a></li>
+          <li><a href="../pages/creation-site-web-metz.html" class="link active">Services</a></li>
           <li><a href="../pages/realisations.html"  class="link">Réalisations</a></li>
           <li><a href="../pages/contact.html" class="link">Contact</a></li>
         </ul>
       </nav>
     </header>
   
-    <div class="all-content-div">
-      <div class="all-content">
-        
-        <div id="text">
-          <h2>Nos services</h2>
-        </div>
 
-        <div class="item bloc">
-          <h2>Création de sites web sur mesure</h2>
-          <div class="diviseur"></div>
-          <p>
-            Nous offrons des services de création de sites web sur mesure pour 
-            les commerçants de Metz. Nous travaillons en étroite collaboration 
-            avec nos clients pour comprendre leurs besoins et créer des sites 
-            web qui répondent à leurs exigences.
-          </p>
-        </div>
-
-        <div class="item bloc">
-          <h2>Refonte de sites existants</h2>
-          <div class="diviseur"></div>
-          <p>
-            Nous proposons des services de refonte de sites existants pour 
-            les commerçants de Metz. Nous pouvons aider à améliorer l'apparence
-             et les fonctionnalités de votre site existant pour l'adapter aux 
-             besoins actuels de votre entreprise.
-          </p>
-        </div>
-
-        <div class="item bloc">
-          <h2>Optimisation pour les moteurs de recherche</h2>
-          <div class="diviseur"></div>
-          <p>Nous proposons des services d'optimisation pour les moteurs de 
-            recherche pour les commerçants de Metz. Nous pouvons améliorer 
-            la visibilité de votre site web sur les moteurs de recherche 
-            en utilisant des techniques d'optimisation telles que la recherche 
-            de mots-clés, la création de contenu de qualité et le netlinking.
-          </p>
-        </div>
-
-        <div class="item bloc">
-          <h2>Support et maintenance</h2>
-          <div class="diviseur"></div>
-          <p>Nous offrons également des services de support et de maintenance 
-            pour les sites web créés pour les commerçants de Metz. Nous nous 
-            engageons à assurer la pérennité de vos sites web en offrant des 
-            garanties de support et de maintenance.
-          </p>
-        </div>
-        
+    <main class="main">
+      
+      <div id="text">
+        <h2>Nos services</h2>
       </div>
-    </div>
+
+      <div class="item bloc">
+        <h2>Création de sites web sur mesure</h2>
+        <div class="diviseur"></div>
+        <p>
+          Nous offrons des services de création de sites web sur mesure pour 
+          les commerçants de Metz. Nous travaillons en étroite collaboration 
+          avec nos clients pour comprendre leurs besoins et créer des sites 
+          web qui répondent à leurs exigences.
+        </p>
+      </div>
+
+      <div class="item bloc">
+        <h2>Refonte de sites existants</h2>
+        <div class="diviseur"></div>
+        <p>
+          Nous proposons des services de refonte de sites existants pour 
+          les commerçants de Metz. Nous pouvons aider à améliorer l'apparence
+            et les fonctionnalités de votre site existant pour l'adapter aux 
+            besoins actuels de votre entreprise.
+        </p>
+      </div>
+
+      <div class="item bloc">
+        <h2>Optimisation pour les moteurs de recherche</h2>
+        <div class="diviseur"></div>
+        <p>Nous proposons des services d'optimisation pour les moteurs de 
+          recherche pour les commerçants de Metz. Nous pouvons améliorer 
+          la visibilité de votre site web sur les moteurs de recherche 
+          en utilisant des techniques d'optimisation telles que la recherche 
+          de mots-clés, la création de contenu de qualité et le netlinking.
+        </p>
+      </div>
+
+      <div class="item bloc">
+        <h2>Support et maintenance</h2>
+        <div class="diviseur"></div>
+        <p>Nous offrons également des services de support et de maintenance 
+          pour les sites web créés pour les commerçants de Metz. Nous nous 
+          engageons à assurer la pérennité de vos sites web en offrant des 
+          garanties de support et de maintenance.
+        </p>
+      </div>
+      
+    </main>
     
-    <div class="footer-div">
-      <div class="footer">
+    <footer class="footer">
+      <div class="footer-div">
         &copy; 2023 Hasan BASBUNAR. Tous droits réservés
         <a href="../pages/mentions-legales.html">Mentions légales</a>
       </div>
-    </div>
-  </div>
+    </footer>
+
 </body>
-<script>
-  var text = document.getElementById('text');
-  var splitText = text.innerText.split('');
-
-  text.innerHTML = '';
-    i = 0
-    setInterval(function(){
-      AjoutDeLettre()}
-      , 100 )
-
-  function AjoutDeLettre(){
-    if(i < splitText.length){
-      text.innerHTML += splitText[i];
-      i++;
-    }
-  }
-</script>
 </html>
