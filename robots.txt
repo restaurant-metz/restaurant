@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: /resraurant/
+Disallow: /restaurant/
 Disallow: /pages/php/
+Disallow: /medias/
 Sitemap: https://www.hasanbasbunar.fr/sitemap.xml
