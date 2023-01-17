@@ -8,7 +8,7 @@
   width: 100%;
   max-width: 350px;
   background-color: rgba(0, 0, 0, 0.062);
-  border-radius: 50px;
+  border-radius: 7px;
   position: relative;
   padding-bottom: 65px;
 }
@@ -141,7 +141,7 @@
 
 .buttons button:hover {
   color: rgb(255, 255, 255);
-  background-color: #ecb279;
+  background-color: #19a2f1;
   cursor: pointer;
 }
 
