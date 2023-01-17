@@ -77,12 +77,3 @@
   }
 }
 
-@media screen and (min-width: 800px) {
-  .header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 5;
-  }
-}
