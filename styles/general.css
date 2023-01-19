@@ -5,18 +5,14 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   position: relative;
-  background: rgb(223,255,157);
-  background: -moz-linear-gradient(to bottom, rgb(131, 194, 231) 0%, rgb(138, 235, 194) 100%);
-  background: -webkit-linear-gradient(to bottom, rgb(131, 194, 231) 0%, rgb(138, 235, 194) 100%);
-  background: linear-gradient(to bottom, rgb(131, 194, 231) 0%, rgb(138, 235, 194) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dfff9d",endColorstr="#ffbb7e",GradientType=1);
   width: 100%;
+  background-color: black;
 }
 
 
