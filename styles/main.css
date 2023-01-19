@@ -10,6 +10,7 @@
   height: 100%;
   min-height: 100vh;
   padding-top: 48px;
+  max-width: 1220px;
 }
 
 .accueil {
@@ -42,8 +43,7 @@
   width: 100%;
 }
 
-
-h1.title {
+.title {
   padding-bottom: 15px;
   font-weight: 600;
   font-size: 70px;
@@ -117,7 +117,27 @@ h1.title {
 }
 
 
+.coding {
+  width: 50%;
+  object-fit: contain;
+  object-position: center;
+  padding-top: 2vw;
+  padding-bottom: 0;
+  display: block;
+  margin: 0 auto;
+}
 
+.title.service {
+  padding-top: 50px;
+}
+
+.main.services {
+  display: block;
+}
+
+.services p {
+  color: white;
+}
 
 
 
