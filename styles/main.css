@@ -95,7 +95,16 @@
     padding: 12px 22px;
     font-size: 17px;
   }
+  .hasan-img{
+    width: 28vh;
+  }
 }
+@media screen and (max-width: 400px){
+  .hasan-img{
+    width: 24vh;
+  }
+}
+
 
 
 
