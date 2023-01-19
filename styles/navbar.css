@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#000000d3, #0e0e0eda);
+  background: linear-gradient(#000000e7, #0e0e0ee5);
   position: fixed;
   right: 0;
   left: 0;
@@ -64,7 +64,7 @@
 
 @media screen and (max-width:833px) {
   .header{
-    height: 68px;
+    height: 48px;
   }
   .navbar {
     margin-top: 0px;
@@ -76,6 +76,10 @@
 
   .navbar ul {
     flex-wrap: wrap;
+  }
+
+  .name {
+    display: none;
   }
 
 }
