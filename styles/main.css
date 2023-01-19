@@ -38,7 +38,7 @@
 }
 
 .diviser{
-  height: 15px;
+  height: 10px;
   background-color: white;
   width: 100%;
 }
@@ -161,4 +161,63 @@
 
 .voir:active {
   opacity: 0.7;
+}
+
+.convaincre{
+  color: rgba(245, 245, 245, 0.966);
+  font-size: 25px;
+  padding-top: 50px;
+  width: 50%;
+  max-width: 600px;
+  line-height: 1;
+}
+
+.bleu {
+  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: linear-gradient(to right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.convaincre h2, .convaincre h1{
+  font-size: 70px;
+}
+
+.list {
+  padding-top: 50px;
+  text-align: left;
+  line-height: 40px;
+}
+
+.p-fin {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 734px){
+  .convaincre h2, .convaincre h1{
+    font-size: 50px;
+  }
+
+  .convaincre {
+    width: 330px;
+    font-size: 22px;
+  }
+
+  
+}
+@media screen and (max-width: 400px){
+
+  .convaincre h2, .convaincre h1{
+    font-size: 40px;
+  }
+
+  .convaincre {
+    width: 330px;
+    font-size: 16px;
+  }
+  
 }
