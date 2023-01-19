@@ -23,12 +23,13 @@
 }
 
 .div-accueil {
-  width: 460px;
+  width: 80%;
+  max-width: 600px;
 }
 
 .hasan-img{
   position: absolute;
-  width: 30vh;
+  width: 27vh;
   right: 0;
   bottom: 0;
   object-fit: contain;
@@ -42,11 +43,11 @@
 }
 
 
-.title {
-  padding-bottom: 6px;
-  font-weight: 500;
-  font-size: 56px;
-  line-height: 50px;
+h1.title {
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 1;
   letter-spacing: 1px;
   background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
   background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
@@ -57,16 +58,18 @@
 }
 
 .div-accueil button {
+  width: 80%;
+  max-width: 300px;
   margin-top: 50px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  padding: 16px 26px;
+  padding: 18px 28px;
   font-size: 20px;
   border-width: 2px;
   border-radius: 50px;
   background-color: black;
   color: white;
-  border-color: rgba(247, 234, 255, 0.89);
+  border-color: rgba(208, 133, 255, 0.89);
   transition: color 0.6s, background-color 0.6s, border-color 0.6s;
 }
 
@@ -81,9 +84,8 @@
   .accueil {
     padding: 100px 0px 0px 0px;
   }
-  .title {
-    font-size: 40px;
-    text-align: center;
+  h1.title {
+    font-size: 55px;
   }
 
   .div-accueil {
@@ -92,16 +94,25 @@
 
   .div-accueil button {
     margin-top: 28px;
-    padding: 12px 22px;
-    font-size: 17px;
+    padding: 14px 24px;
+    font-size: 18px;
   }
   .hasan-img{
-    width: 28vh;
+    width: 25vh;
   }
 }
 @media screen and (max-width: 400px){
   .hasan-img{
-    width: 24vh;
+    width: 22vh;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+  .div-accueil button {
+    margin-top: 28px;
+    padding: 12px 22px;
+    font-size: 15px;
+    width: 80%;
   }
 }
 
@@ -109,210 +120,6 @@
 
 
 
-
-
-.profile-div {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 350px;
-  background-color: rgba(0, 0, 0, 0.062);
-  border-radius: 7px;
-  position: relative;
-  padding-bottom: 65px;
-}
-
-.photo {
-  width: 205px;
-  height: 205px;
-  display: block;
-  border-radius: 100%;
-  object-fit: contain;
-  margin: 25px 0px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.212);
-}
-
-
-.profile-name {
-  margin-bottom: 25px;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  width: 60%;
-  text-align: center;
-}
-
-.metier {
-  margin-bottom: 25px;
-  font-weight: 600px;
-  text-align: center;
-  font-size: 18px;
-  width: 60%;
-}
-
-.divider {
-  height: 2px;
-  border-radius: 100px;
-  background-color: black;
-  width: 25%;
-  margin-bottom: 25px;
-}
-
-.social-div {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 15px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.social-div img{
-  width: 35px;
-}
-
-.partage .facebook-icon, .partage .twitter-icon, .partage .linkedin-icon{
-  width: auto;
-  height: 35px;
-}
-
-.bloc {
-  border-radius: 7px;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 255, 255, 0.548);
-  padding: 25px 15px 30px 15px;
-}
-
-.bloc h2, .bloc h3, .bloc p{
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.bloc h2, .bloc h3 {
-  font-weight: 600;
-}
-
-.bloc p {
-  font-weight: 500;
-}
-
-.diviseur {
-  height: 2px; 
-  background-color: black;
-  width: 33%; 
-  margin: 0 auto; 
-  margin-bottom: 3vh; 
-  margin-top: 3vh;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
-}
-
-.item {
-  width: 100%;
-  max-width: 500px;
-}
-
-.social {
-  position: relative;
-  padding-bottom: 70px;
-}
-
-.social p {
-  padding-bottom: 30px;
-}
-
-
-.buttons button {
-  padding: 16px 32px;
-  width: 175px;
-  border: none;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 15px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  transition: color 0.2s, background-color 0.2s;
-}
-
-.buttons {
-  display: flex;
-  column-gap: 16px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  row-gap: 16px;
-}
-
-.buttons button:hover {
-  color: rgb(255, 255, 255);
-  background-color: #19a2f1;
-  cursor: pointer;
-}
-
-.buttons button:active {
-  opacity: 0.7;
-}
-
-
-input[type=text], textarea, input[type=email] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  margin-right: 0px;
-  margin-left: 0px;
-  resize: vertical;
-}
-label{margin-right: 0px;
-  margin-left: 0px;
-  width: 100%;}
-
-input[type=submit] {
-  background-color: #1255a2;
-  color: rgb(255, 255, 255);
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #1872D9;
-}
-
-.container {
-  /* Ajouter box-sizing */
-  box-sizing : border-box;
-  border-radius:5px;
-  background-color: gb(248, 236, 219);
-  padding:20px;
-  width: 100%;
-  max-width: 500px;
-
-  /* redéfinition 400 + 2*20 */
-  margin:0 auto;
-}
-
-.form {
-  width: 100%;
-  max-width: 600px;
-}
-
-.partage h2 {
-  padding-bottom: 30px;
-}
 
 .voir {
   background-color: #3783db;
