@@ -20,7 +20,7 @@
   align-items: flex-start;
   justify-content: center;
   row-gap: 8px;
-  padding-left: 2vw;
+  margin-left: 2vw;
   padding-top: 3vw;
   padding-bottom: 3vw;
 }
