@@ -3,35 +3,55 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  row-gap: 50px;
   column-gap: 50px;
   text-align: center;
   margin: 0 auto;
   width: 100%;
   height: 100%;
   min-height: 100vh;
+  padding-top: 48px;
 }
 
 .accueil {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  padding-top: 150px;
+  padding-top: 185px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .div-accueil {
   width: 460px;
 }
 
+.hasan-img{
+  position: absolute;
+  width: 30vh;
+  right: 0;
+  bottom: 0;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.diviser{
+  height: 15px;
+  background-color: white;
+  width: 100%;
+}
+
 
 .title {
+  padding-bottom: 6px;
   font-weight: 500;
   font-size: 56px;
   line-height: 50px;
   letter-spacing: 1px;
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(29, 29, 29));
+  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: linear-gradient(to right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -46,7 +66,7 @@
   border-radius: 50px;
   background-color: black;
   color: white;
-  border-color: #bbe6ff;
+  border-color: rgba(247, 234, 255, 0.89);
   transition: color 0.6s, background-color 0.6s, border-color 0.6s;
 }
 
@@ -59,11 +79,15 @@
 
 @media screen and (max-width: 734px){
   .accueil {
-    padding-top: 80px;
-    width: 330px;
+    padding: 100px 0px 0px 0px;
   }
   .title {
     font-size: 40px;
+    text-align: center;
+  }
+
+  .div-accueil {
+    width: 330px;
   }
 
   .div-accueil button {
