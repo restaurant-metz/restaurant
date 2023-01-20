@@ -35,13 +35,17 @@
   padding-left: 25px;
 }
 
+.list li {
+  margin-bottom: 16px;
+}
+
 .p-fin {
   padding-top: 50px;
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 50px;
   text-align: left;
-  line-height: 1.2;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 734px){
@@ -76,14 +80,13 @@
     margin-top: 28px;
     padding: 12px 22px;
     font-size: 15px;
-    width: 80%;
+    width: 100%;
   }
   
 }
 
 .convaincre button {
   width: 100%;
-  max-width: 300px;
   margin-top: 50px;
   margin-bottom: 50px;
   font-weight: 500;
