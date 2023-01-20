@@ -1,6 +1,6 @@
 .main.services {
   width: 100%;
-  max-width: 100px;
+  max-width: 1000px;
 }
 
 .coding {
@@ -15,10 +15,57 @@
 
 .title.service {
   padding-top: 50px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 1;
+  letter-spacing: 1px;
+  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: linear-gradient(to right, rgb(255, 255, 255) , rgb(43, 177, 255)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
 
 .services p {
   color: white;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.services button {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 18px 28px;
+  font-size: 20px;
+  border-width: 2px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  border-color: rgba(81, 200, 255, 0.89);
+  transition: color 0.6s, background-color 0.6s, border-color 0.6s;
+}
+
+.services button:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+
+.en-valeur {
+  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: linear-gradient(to right,  rgb(43, 177, 255), rgb(255, 255, 255)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
