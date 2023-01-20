@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /restaurant/
-Disallow: /pages/php/
 Sitemap: https://www.hasanbasbunar.fr/sitemap.xml

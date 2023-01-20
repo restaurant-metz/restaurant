@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/general.css">
   <link rel="stylesheet" href="../styles/navbar.css">
-  <link rel="stylesheet" href="../styles/footer.css">
   <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/accueil.css">
+  <link rel="stylesheet" href="../styles/services.css">
+  <link rel="stylesheet" href="../styles/decouverte.css">
+  <link rel="stylesheet" href="../styles/contact.css">
   <link rel="icon" type="image/png" href="../medias/favicon.png"/>
   <link rel="apple-touch-icon" href="medias/favicon.png">
   <title>Contactez-nous pour discuter de votre projet de création de site web pour les commerçants de Metz</title>
 </head>
 <body>
-  
+
     <header class="header">
       <nav class="navbar">
         <a href="https://www.hasanbasbunar.fr" class="name">Hasan BASBUNAR</a>
@@ -33,6 +37,18 @@
       <p>mail: basbunarhasan@gmail.com</p>
       <p>linkedin: <a href="https://www.linkedin.com/in/hasanbasbunar/">Voir</a></p>
       
+
+      <h1>Formulaire de contact</h1>
+      <form action="../pages/contact.php" method="post">
+        Mail: <input type="text" name="mail" value="" />
+        <br />
+        Sujet: <input type="text" name="sujet" value="" />
+        <br />
+        Message: <textarea name="message" cols="40" rows="20"></textarea>
+        <br />
+        <input type="submit" name="envoyer" value="Envoyer" />
+    </form>
+
     </main>
     
     <footer class="footer">
@@ -43,4 +59,55 @@
     </footer>
 
 </body>
+<script>
+  function validateForm()                                    
+{ 
+    var name = document.forms["myForm"]["name"];               
+    var email = document.forms["myForm"]["email"];    
+    var message = document.forms["myForm"]["message"];   
+   
+    if (name.value == "")                                  
+    { 
+        document.getElementById('errorname').innerHTML="Veuillez entrez un nom valide";  
+        name.focus(); 
+        return false; 
+    }else{
+        document.getElementById('errorname').innerHTML="";  
+    }
+       
+    if (email.value == "")                                   
+    { 
+        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+        email.focus(); 
+        return false; 
+    }else{
+        document.getElementById('erroremail').innerHTML="";  
+    }
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (message.value == "")                           
+    {
+        document.getElementById('errormsg').innerHTML="Veuillez entrez un message valide"; 
+        message.focus(); 
+        return false; 
+    }else{
+        document.getElementById('errormsg').innerHTML="";  
+    }
+   
+    return true; 
+}
+</script>
 </html>

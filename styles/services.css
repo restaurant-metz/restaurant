@@ -1,10 +1,10 @@
 .main.services {
   width: 100%;
-  max-width: 1000px;
+  max-width: 600px;
+  height: 100%;
 }
 
 .coding {
-  height: 100%;
   max-height: 600px;
   object-fit: contain;
   width: 100%;
@@ -72,4 +72,41 @@
   background: linear-gradient(to right,  rgb(43, 177, 255), rgb(255, 255, 255)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 734px){
+  .title.service{
+    font-size: 50px;
+  }
+
+  .services p {
+    font-size: 22px;
+  }
+
+  .services a button {
+    margin-top: 28px;
+    padding: 14px 24px;
+    font-size: 18px;
+    width: 60%;
+  }
+
+  
+}
+@media screen and (max-width: 400px){
+  .title.service{
+    font-size: 40px;
+  }
+
+  .services p {
+    font-size: 16px;
+  }
+
+  .services a button {
+    margin-top: 28px;
+    padding: 12px 22px;
+    font-size: 15px;
+    width: 60%;
+  }
+  
 }
