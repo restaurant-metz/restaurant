@@ -1,0 +1,104 @@
+.convaincre{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 600px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.bleu {
+  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: linear-gradient(to right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.convaincre h2, .convaincre h1{
+  font-size: 70px;
+}
+
+.list {
+  padding-top: 50px;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 24px;
+  font-weight: 500;
+  list-style:  lower-greek;
+}
+
+.p-fin {
+  padding-top: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 50px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 734px){
+  .convaincre h2, .convaincre h1{
+    font-size: 50px;
+  }
+
+  .convaincre {
+    width: 330px;
+    font-size: 22px;
+  }
+
+  .convaincre a button {
+    margin-top: 28px;
+    padding: 14px 24px;
+    font-size: 18px;
+  }
+
+  
+}
+@media screen and (max-width: 400px){
+
+  .convaincre h2, .convaincre h1{
+    font-size: 40px;
+  }
+
+  .convaincre {
+    font-size: 16px;
+  }
+
+  .convaincre a button {
+    margin-top: 28px;
+    padding: 12px 22px;
+    font-size: 15px;
+    width: 80%;
+  }
+  
+}
+
+.convaincre button {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 18px 28px;
+  font-size: 20px;
+  border-width: 2px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  border-color: rgba(81, 200, 255, 0.89);
+  transition: color 0.6s, background-color 0.6s, border-color 0.6s;
+}
+
+.convaincre button:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+}

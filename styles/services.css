@@ -1,0 +1,24 @@
+.main.services {
+  width: 100%;
+  max-width: 100px;
+}
+
+.coding {
+  height: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  width: 100%;
+  padding-top: 2vw;
+  padding-bottom: 0;
+  display: block;
+}
+
+.title.service {
+  padding-top: 50px;
+}
+
+
+
+.services p {
+  color: white;
+}
