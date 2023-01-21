@@ -57,15 +57,35 @@
             dans les plus brefs délais.
           </p>
           <h3 class="sous-titre">Formulaire de contact</h3>
+
+
           <form action="../pages/contact.php" method="post">
-            Mail: <input type="text" name="mail" value="" />
-            <br />
-            Sujet: <input type="text" name="sujet" value="" />
-            <br />
-            Message: <textarea name="message" cols="40" rows="20"></textarea>
-            <br />
-            <input type="submit" name="envoyer" value="Envoyer" />
-        </form>
+            <div class="row">
+
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <label for="input-name">Nom</label>
+                  <input type="text" name="name" value="" id="input-name" class="form-control"/>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <label for="input-email">Email</label>
+                  <input type="text" name="email" value="" id="input-email" class="form-control"/>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="form-group">
+                  <label for="input-message">Message</label>
+                  <textarea class="form-control" name="message" id="input-message" cols="30" rows="10">
+                  </textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+              </div>
+
+            </div>
+          </form>
+
         </div>
       </section>
       
