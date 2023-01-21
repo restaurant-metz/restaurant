@@ -55,7 +55,7 @@
   font-weight: 500;
   padding: 18px 28px;
   font-size: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.452);
   position: relative;
   color: rgb(255, 255, 255);
   transition: color 0.6s, background-color 0.7s, border-color 0.7s;
