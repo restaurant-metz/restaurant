@@ -1,83 +1,102 @@
-.accueil {
+.section {
   width: 100%;
   height: 100%;
   min-height: 100vh;
   padding-top: 185px;
   display: flex;
   justify-content: center;
+  color: white;
   position: relative;
+  margin-bottom: 50px;
 }
 
-.div-accueil {
+.sous-section {
   width: 80%;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .hasan-img{
   position: absolute;
-  width: 27vh;
+  width: 25vh;
   right: 0;
   bottom: 0;
-  object-fit: contain;
   z-index: -1;
 }
 
 .diviser{
-  height: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 14px;
   background-color: white;
-  width: 100%;
 }
 
 .title {
-  padding-bottom: 15px;
-  font-weight: 600;
+  padding-bottom: 1vh;
+  font-weight: 700;
   font-size: 70px;
   line-height: 1;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
   background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
   background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
-  background: linear-gradient(to right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207)); 
+  background: linear-gradient(to right, rgba(213, 154, 238, 0.89) , rgb(84, 191, 233)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.div-accueil button {
-  width: 80%;
-  max-width: 300px;
+.button.accueil {
   margin-top: 50px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  padding: 18px 28px;
-  font-size: 20px;
-  border-width: 2px;
-  border-radius: 50px;
-  background-color: black;
-  color: white;
-  border-color: rgba(208, 133, 255, 0.89);
-  transition: color 0.6s, background-color 0.6s, border-color 0.6s;
 }
 
-.div-accueil button:hover {
+.button {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 35px;
+  font-weight: 500;
+  padding: 18px 28px;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  color: rgb(255, 255, 255);
+  transition: color 0.6s, background-color 0.7s, border-color 0.7s;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.border-gradient {
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.button:hover {
   background-color: white;
   color: black;
-  border-color: white;
+}
+
+.button:active {
+  opacity: 0.7;
 }
 
 
 @media screen and (max-width: 734px){
-  .accueil {
+  .section {
     padding: 100px 0px 0px 0px;
   }
-  h1.title {
+  .title {
     font-size: 55px;
   }
 
-  .div-accueil {
+  .sous-section {
     width: 330px;
   }
 
-  .div-accueil button {
+  .button {
     margin-top: 28px;
     padding: 14px 24px;
     font-size: 18px;
@@ -90,10 +109,10 @@
   .hasan-img{
     width: 22vh;
   }
-  h1.title {
+  .title {
     font-size: 40px;
   }
-  .div-accueil button {
+  .button {
     margin-top: 28px;
     padding: 12px 22px;
     font-size: 15px;
