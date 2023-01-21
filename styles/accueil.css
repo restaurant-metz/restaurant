@@ -100,12 +100,12 @@
     font-size: 18px;
   }
   .hasan-img{
-    width: 20vh;
+    width: 21vh;
   }
 }
 @media screen and (max-width: 400px){
   .hasan-img{
-    width: 19vh;
+    width: 20vh;
   }
   .title {
     font-size: 40px;
