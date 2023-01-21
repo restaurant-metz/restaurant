@@ -13,7 +13,6 @@
   background: linear-gradient(to right, rgba(255, 255, 255, 0.89) , rgb(255, 255, 255)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
-  padding-bottom: 70px;
 }
 
 h3.sous-titre {

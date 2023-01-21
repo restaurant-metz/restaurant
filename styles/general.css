@@ -13,3 +13,12 @@ body {
 
   padding-bottom: 101px;
 }
+
+.title.realisations {
+  background: -webkit-linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637));
+  background: -o-linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637));
+  background: -moz-linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637));
+  background: linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -31,23 +31,46 @@
     </header>
   
     <main class="main" style="color: white;">
-      
-      <h2 class="title">Me contacter</h2>
-      <p>tel: 0781301358</p>
-      <p>mail: basbunarhasan@gmail.com</p>
-      <p>linkedin: <a href="https://www.linkedin.com/in/hasanbasbunar/">Voir</a></p>
+      <section class="section">
+        <div class="sous-section">
+          <h2 class="title contact">
+            N'hésitez pas à nous contacter pour en savoir plus sur nos services
+          </h2>
+          <p class="parag">
+            Vous avez des questions sur nos services de création de sites internet
+            pour les commerçants de Metz ou vous souhaitez 
+            recevoir un devis gratuit ? N'hésitez pas à nous 
+            contacter ! Nous sommes à votre disposition pour 
+            répondre à toutes vos questions et pour vous aider 
+            à créer un site internet qui répond à vos besoins.
+          </p>
+          <p class="parag">
+            Vous pouvez nous contacter par téléphone au 
+            <span class="info-contact">07 81 30 13 58</span>, 
+            par email à l'adresse 
+            <span class="info-contact">basbunarhasan@gmail.com</span>,
+            sur Linkedin avec ce lien <span class="info-contact">
+              <a href="https://www.linkedin.com/in/hasanbasbunar/">
+                voir</a></span>
+            ou en remplissant 
+            le formulaire de contact sur cette page. Nous vous répondrons
+            dans les plus brefs délais.
+          </p>
+          <h3 class="sous-titre">Formulaire de contact</h3>
+          <form action="../pages/contact.php" method="post">
+            Mail: <input type="text" name="mail" value="" />
+            <br />
+            Sujet: <input type="text" name="sujet" value="" />
+            <br />
+            Message: <textarea name="message" cols="40" rows="20"></textarea>
+            <br />
+            <input type="submit" name="envoyer" value="Envoyer" />
+        </form>
+        </div>
+      </section>
       
 
-      <h1>Formulaire de contact</h1>
-      <form action="../pages/contact.php" method="post">
-        Mail: <input type="text" name="mail" value="" />
-        <br />
-        Sujet: <input type="text" name="sujet" value="" />
-        <br />
-        Message: <textarea name="message" cols="40" rows="20"></textarea>
-        <br />
-        <input type="submit" name="envoyer" value="Envoyer" />
-    </form>
+
 
     </main>
     

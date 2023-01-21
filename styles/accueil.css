@@ -44,11 +44,9 @@
   background: linear-gradient(to right, rgba(213, 154, 238, 0.89) , rgb(84, 191, 233)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 50px;
 }
 
-.button.accueil {
-  margin-top: 50px;
-}
 
 .button {
   width: 100%;
@@ -61,8 +59,8 @@
   position: relative;
   color: rgb(255, 255, 255);
   transition: color 0.6s, background-color 0.7s, border-color 0.7s;
-  margin: 10px;
   cursor: pointer;
+  margin-bottom: 35px;
 }
 
 .border-gradient {

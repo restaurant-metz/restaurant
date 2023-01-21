@@ -1,6 +1,4 @@
-h1{
-  text-align: center;
-}
+
 .form-style {
   margin:10px auto;
   width: 400px;
@@ -66,4 +64,23 @@ textarea{
 .error{
   color: #D8000C;
   background-color: #FFBABA;
+}
+
+.info-contact {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.info-contact a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.contact {
+  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: linear-gradient(to right, rgb(255, 255, 255) , rgba(65, 121, 75, 0.637)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
