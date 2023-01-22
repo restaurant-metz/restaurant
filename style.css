@@ -169,9 +169,10 @@ a {
   max-width: 800px;
 }
 
-.hasan-img{
+img.hasan-img{
   position: absolute;
   width: 22vh;
+  height: auto;
   left: 0;
   bottom: 0;
   z-index: -1;
