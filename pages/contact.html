@@ -4,14 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/general.css">
-  <link rel="stylesheet" href="../styles/navbar.css">
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/footer.css">
-  <link rel="stylesheet" href="../styles/accueil.css">
-  <link rel="stylesheet" href="../styles/services.css">
-  <link rel="stylesheet" href="../styles/decouverte.css">
-  <link rel="stylesheet" href="../styles/contact.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/png" href="../medias/favicon.png"/>
   <link rel="apple-touch-icon" href="medias/favicon.png">
   <title>Contactez-nous pour discuter de votre projet de création de site web pour les commerçants de Metz</title>
@@ -52,40 +45,11 @@
             <span class="info-contact">basbunarhasan@gmail.com</span>,
             sur Linkedin avec ce lien <span class="info-contact">
               <a href="https://www.linkedin.com/in/hasanbasbunar/">
-                voir</a></span>
-            ou en remplissant 
-            le formulaire de contact sur cette page. Nous vous répondrons
+                voir</a></span>.
+            Je vous répondrais
             dans les plus brefs délais.
           </p>
-          <h3 class="sous-titre">Formulaire de contact</h3>
-
-
-          <form action="../pages/contact.php" method="post">
-            <div class="row">
-
-              <div class="col-xs-6">
-                <div class="form-group">
-                  <label for="input-name">Nom</label>
-                  <input type="text" name="name" value="" id="input-name" class="form-control"/>
-                </div>
-              </div>
-              <div class="col-xs-6">
-                <div class="form-group">
-                  <label for="input-email">Email</label>
-                  <input type="text" name="email" value="" id="input-email" class="form-control"/>
-                </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="form-group">
-                  <label for="input-message">Message</label>
-                  <textarea class="form-control" name="message" id="input-message" cols="30" rows="10">
-                  </textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-              </div>
-
-            </div>
-          </form>
+          
 
         </div>
       </section>
@@ -103,55 +67,4 @@
     </footer>
 
 </body>
-<script>
-  function validateForm()                                    
-{ 
-    var name = document.forms["myForm"]["name"];               
-    var email = document.forms["myForm"]["email"];    
-    var message = document.forms["myForm"]["message"];   
-   
-    if (name.value == "")                                  
-    { 
-        document.getElementById('errorname').innerHTML="Veuillez entrez un nom valide";  
-        name.focus(); 
-        return false; 
-    }else{
-        document.getElementById('errorname').innerHTML="";  
-    }
-       
-    if (email.value == "")                                   
-    { 
-        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
-        email.focus(); 
-        return false; 
-    }else{
-        document.getElementById('erroremail').innerHTML="";  
-    }
-   
-    if (email.value.indexOf("@", 0) < 0)                 
-    { 
-        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
-        email.focus(); 
-        return false; 
-    } 
-   
-    if (email.value.indexOf(".", 0) < 0)                 
-    { 
-        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
-        email.focus(); 
-        return false; 
-    } 
-   
-    if (message.value == "")                           
-    {
-        document.getElementById('errormsg').innerHTML="Veuillez entrez un message valide"; 
-        message.focus(); 
-        return false; 
-    }else{
-        document.getElementById('errormsg').innerHTML="";  
-    }
-   
-    return true; 
-}
-</script>
 </html>
