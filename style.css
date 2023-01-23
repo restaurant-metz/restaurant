@@ -481,3 +481,24 @@ h3.sous-titre {
 }
 
 /*-----------------END SHARE -----------------------------*/
+
+.img {
+  width: 80%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.contacter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 25px;
+}
+
+.icon-container span {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
