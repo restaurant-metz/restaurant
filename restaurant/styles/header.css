@@ -106,10 +106,10 @@ ul li{
     gap: 15px;
 }
 
-.logo-div p {
-    font-size: 1rem;
+.logo-div p{
     color: rgb(255, 255, 255);
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .btns {
