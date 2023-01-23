@@ -16,7 +16,7 @@ label{
   place-content: center;
   overflow: hidden;
   max-height: clamp(500px, 80vh, 1000px);
-  margin:2rem auto;
+  margin: 2rem auto;
   height: auto;
 }
     
