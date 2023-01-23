@@ -475,9 +475,9 @@ h3.sous-titre {
 
 .share {
   display: flex;
-  column-gap: 20px;
   flex-wrap: wrap;
-  row-gap: 20px;
+  column-gap: 16px;
+  row-gap: 16px;
 }
 
 /*-----------------END SHARE -----------------------------*/
