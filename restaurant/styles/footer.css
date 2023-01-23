@@ -1,17 +1,17 @@
 .footer {
     background-color: #333;
-    color: aliceblue; 
+    color: rgb(255, 255, 255); 
     align-items: center; 
     justify-content: center;
-    height: 100%;
-    width: 100%;
     display: flex; 
     flex-direction: column; 
     row-gap: 20px;
+    padding: 20px 20px;
+    font-size: 15px;
 }
 
 .footer-div {
-    height: 150px;
+    height: 80px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -27,8 +27,8 @@
 
 .footer a {
     text-decoration: none;
-    color: rgb(255, 208, 120);
-    font-size: 10px;
+    color: rgb(165, 165, 165);
+    font-size: 12px;
     transition:  color 0.3s;
 }
 
