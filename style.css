@@ -26,6 +26,7 @@ a {
   position: fixed;
   right: 25px;
   bottom: 25px;
+  width: 55px;
   z-index: 10;
 }
 
@@ -272,6 +273,7 @@ img.hasan-img{
   }
   .button {
     margin-top: 28px;
+    margin-bottom: 15px;
     padding: 12px 22px;
     font-size: 15px;
     width: 80%;
@@ -324,6 +326,15 @@ h3.sous-titre {
   }
 }
 
+h3.sous-titre.partager {
+  padding-top: 70px;
+  font-size: 18px;
+}
+
+.share a img {
+  width: 35px;
+}
+
 /*--------------- END DECOUVERTE ----------------------*/
 
 /* -------------------- SERVICES ------------------------ */
@@ -354,6 +365,19 @@ h3.sous-titre {
   background: linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.realisation {
+  display: block;
+  border-image-source: none;
+  border-width: 2px;
+  border-radius: 30px;
+  border-color: rgb(102, 173, 255);
+  margin-top: 15px;
+}
+
+p.parag.realisation {
+  padding-bottom: 10px;
 }
 /*----------------END REALISATIONS ------------------------- */
 
@@ -483,9 +507,14 @@ h3.sous-titre {
 /*-----------------END SHARE -----------------------------*/
 
 .img {
-  width: 80%;
+  width: 100%;
   margin-bottom: 30px;
   border-radius: 20px;
+  box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
+}
+
+.top-img {
+  box-shadow: none;
 }
 
 .contacter {
@@ -499,6 +528,5 @@ h3.sous-titre {
 }
 
 .icon-container span {
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 18px;
 }
