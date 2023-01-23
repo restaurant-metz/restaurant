@@ -103,8 +103,7 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; 
-    padding-right: 40px;
+    gap: 15px;
 }
 
 .logo-div p {
