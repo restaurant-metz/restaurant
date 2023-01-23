@@ -124,13 +124,28 @@
               <p>Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p>
             </div>
               
-        <div class="footer-div">
-            <footer>
-                &copy; Tous droits réservés - 2023
-                <a href="mentions-legales.html">Mentions légales</a>
-            </footer>
-        </div>
+            <div class="footer-div">
+                <footer class="footer">
+                    <p>&copy; Tous droits réservés - 2023</p>
+                    <div class="liens-footer-div">
+                        <a href="mentions-legales.html">Mentions légales</a>
+                    </div>
+                </footer>
+            </div>
     </div>
 
 </body>
+<script>
+    const btn = document.querySelector('.btn');
+    
+    btn.addEventListener('click', () => {
+    
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        })
+    
+    })
+    </script>
 </html>
