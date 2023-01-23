@@ -247,7 +247,7 @@ img.hasan-img{
     padding: 100px 0px 0px 0px;
   }
   .title {
-    font-size: 55px;
+    font-size: 52px;
   }
 
   .sous-section {
@@ -263,12 +263,12 @@ img.hasan-img{
     width: 21vh;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
   .hasan-img{
     width: 20vh;
   }
   .title {
-    font-size: 40px;
+    font-size: 38px;
   }
   .button {
     margin-top: 28px;
