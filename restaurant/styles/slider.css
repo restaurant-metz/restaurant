@@ -1,155 +1,76 @@
-input[type="radio"]{
-  position:absolute;
-  left:-100vw
-}	
-    
-label{
-  cursor:pointer;
-  position: relative;
-  z-index: 200;
-}
-    
-.slideshow {
-  display: grid;
-  grid-template: "slider" 1fr;
-  place-items: center;
-  place-content: center;
-  overflow: hidden;
-  max-height: clamp(500px, 80vh, 1000px);
-  margin: 2rem auto;
-  height: auto;
-}
-    
-.slideshow> * {
-  grid-area: slider;
-  max-width: 1200px;
-}	
-    
-.cadre-ratio {
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  z-index: -1;  
-}
-    
-.slideshow  ul { 
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-}
-    
-.slideshow  ul  li{
-  aspect-ratio: 16 / 9;
-  min-width: 100%;
-  transition: transform .25s;
-}
-    
-.slideshow  ul  li	img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  user-select: none;
-}
+.custom-slider { display: none; }
+    .slide-container {
+        height: 100%;
+        max-width: 1200px;
+        position: relative;
+        margin: auto;
+        z-index: 100;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: white;
+        font-size: 30px;
+        background-color: rgba(0,0,0,0);
+        transition: background-color 0.6s ease;
+    }
+    .prev{ left: 15px; }
+    .next { right: 15px; }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.5);
+    }
+    .slide-text {
+        position: absolute;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 15px;
+        bottom: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .slide-index {
+        color: #ffffff;
+        font-size: 13px;
+        padding: 15px;
+        position: absolute;
+        top: 0;
+    }
+    .slide-img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .slide-dot{ text-align: center; }
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover { background-color: #111111; }
+    .fade {
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+    @keyframes fade {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
 
-/*navigateurs ne supportant pas aspect-ratio*/	
-@supports not (aspect-ratio: 16 / 9) {
-  .cadre-ratio ul >li::before {
-    content: "";
-    float: left;
-    padding-top: 56.25%;
-  }
-
-  .cadre-ratio ul >li::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-}   
-    
-#slide_img1:checked ~ .cadre-ratio ul > li{transform:translatex(0%)}  
-#slide_img2:checked ~ .cadre-ratio ul > li{transform: translatex(-100%)}  
-#slide_img3:checked ~ .cadre-ratio ul > li{transform: translatex(-200%)}
-#slide_img4:checked ~ .cadre-ratio ul > li {transform: translatex(-300%)}
-    
-/******************fleches**************************/
-    
-.precedent{
-  place-self: center left;	
-}
-
-.suivant{
-  place-self: center right;
-}
-
-.slideshow > .precedent > label,
-.slideshow > .suivant > label{  
-  display: none;
-  background-color:hsl(0,0%,15%);
-  justify-content: center;
-  align-content: center
-}   
-        
-.slideshow > .precedent > label:after{
-  content:'←'
-}
-
-.slideshow > .suivant > label:after{
-  content:'→'
-}
-    
-.slideshow > .precedent > label:after,
-.slideshow > .suivant > label:after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:clamp(1rem, 2vw, 2rem);
-  color:hsl(0, 0%, 100%);
-}   
-
-#slide_img1:checked ~ .precedent > label.img4,
-#slide_img1:checked ~ .suivant > label.img2,
-#slide_img2:checked ~ .precedent > label.img1,
-#slide_img2:checked ~ .suivant > label.img3,
-#slide_img3:checked ~ .precedent > label.img2,
-#slide_img3:checked ~ .suivant > label.img4,
-#slide_img4:checked ~ .precedent > label.img3,
-#slide_img4:checked ~ .suivant > label.img1{
-  display:flex;
-  --size: clamp(2rem, 8vw, 4rem);
-  width:var(--size);
-  height:var(--size);
-}
-
-/***************************navigation puces bas********************************/
-.puces {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  place-self: end center;
-}
-    
-.puces label{
-  --size: 1rem;
-  background-color: white;
-  border-radius: 50%;
-  width: var(--size);
-  height: var(--size);
-}
-
-/********************simulation lien actif sur les puces******************************/
-    
-#slide_img1:checked ~ .puces > label.img1> .actif_puces,
-#slide_img2:checked ~ .puces > label.img2 > .actif_puces,
-#slide_img3:checked ~ .puces > label.img3 > .actif_puces,
-#slide_img4:checked ~ .puces > label.img4 > .actif_puces{
-  border-radius: inherit;	
-  display: flex;
-  height: inherit;
-  width: inherit;
-  background-color: black;
-}
-      
-#galeries {
+.galerie {
   text-align: center;
-  padding-top: 32px;
+  padding-bottom: 35px;
 }

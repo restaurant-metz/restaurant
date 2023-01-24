@@ -20,8 +20,8 @@
         <div class="all-content">
             <div class="nav-container">
                 <div class="logo-div">
-                    <img src="images/logo.svg" alt="restaurant's logo" class="logo" >
-                    <p>Restaurant l'Exemple.</p>
+                    <img src="../medias/Hasan.jpg" alt="restaurant's logo" class="logo" >
+                    <p>Restaurant l'Exemple</p>
                 </div>
                 <ul>
                     <li><a href="../pages/realisations.html">Retour</a></li>
@@ -172,56 +172,32 @@
                     </div>
 
                 </div>
-        
-                <h2 id="galeries" >Galeries</h2>
-                <div class=slideshow>
-                    <input name="slideshow" id=slide_img1 type="radio" checked>
-                    <input name="slideshow" id=slide_img2 type="radio">
-                    <input name="slideshow" id=slide_img3 type="radio">
-                    <input name="slideshow" id=slide_img4 type="radio"> 
-                    <div class="cadre-ratio">
-                    <ul>
-                    <li class=img1>
-                        <img src="images/resto1.jpg" alt="resto" >
-                    </li>
-                    <li class=img2>
-                        <img src="images/resto2.jpg" alt="rzefg" >
-                    </li>
-                    <li class=img3>
-                        <img src="images/resto3.jpg" alt="fezzf" >
-                    </li>
-                    <li class=img4>
-                        <img src="images/resto4.jpg" alt="sfz" >
-                    </li>
-                    </ul>
+                <h2 class="galerie">Galerie</h2>
+                <div class="slide-container">
+                    <div class="custom-slider fade">
+                        <div class="slide-index">1 / 3</div>
+                        <img class="slide-img" src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                        <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     </div>
-                    <div class=precedent>
-                        <label class=img1 for=slide_img1></label>
-                        <label class=img2 for=slide_img2></label>
-                        <label class=img3 for=slide_img3></label>
-                        <label class=img4 for=slide_img4></label>
+                    <div class="custom-slider fade">
+                        <div class="slide-index">2 / 3</div>
+                        <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">
+                        <div class="slide-text">Nullam luctus aliquam ornare. </div>
                     </div>
-                    <div class=suivant>
-                        <label class=img1 for=slide_img1></label>
-                        <label class=img2 for=slide_img2></label>
-                        <label class=img3 for=slide_img3></label>
-                        <label class=img4 for=slide_img4></label>
+                    <div class="custom-slider fade">
+                        <div class="slide-index">3 / 3</div>
+                        <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
+                        <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
                     </div>
-                    <div class=puces>
-                        <label class="img1" for=slide_img1>
-                            <span class=actif_puces></span>
-                        </label>
-                        <label class="img2" for=slide_img2>
-                            <span class=actif_puces></span>
-                        </label>
-                        <label class="img3" for=slide_img3>
-                            <span class=actif_puces></span>
-                        </label>	
-                        <label class="img4" for=slide_img4>
-                            <span class=actif_puces></span>
-                        </label>
-                    </div> 
-                </div>	
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div class="slide-dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
         
                 <div class="paiements">
                     <h2>Paiements acceptés</h2>
@@ -280,6 +256,34 @@
     </div>
 
 </body>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("custom-slider");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+</script>
 <script>
 const btn = document.querySelector('.btn');
 
