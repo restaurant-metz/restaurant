@@ -17,11 +17,6 @@ body {
   padding-bottom: 101px;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .whats-icon {
   position: fixed;
   right: 25px;
@@ -200,6 +195,7 @@ img.hasan-img{
   background: -o-linear-gradient(right, rgba(213, 154, 238, 0.89) , rgb(84, 191, 233));
   background: -moz-linear-gradient(right,rgba(213, 154, 238, 0.89) , rgb(84, 191, 233));
   background: linear-gradient(to right, rgba(213, 154, 238, 0.89) , rgb(84, 191, 233)); 
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 50px;
@@ -221,6 +217,11 @@ img.hasan-img{
   margin-bottom: 35px;
   margin-right: 15px;
   margin-left: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .border-gradient {
@@ -295,7 +296,8 @@ img.hasan-img{
   background: -webkit-linear-gradient(left, rgb(255, 255, 255) , rgb(255, 255, 255));
   background: -o-linear-gradient(right, rgb(255, 255, 255) , rgb(255, 255, 255));
   background: -moz-linear-gradient(right,rgb(255, 255, 255) , rgb(255, 255, 255));
-  background: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255)); 
+  background: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255));
+  background-clip: text; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
 }
@@ -351,7 +353,8 @@ h3.sous-titre.partager {
   background: -webkit-linear-gradient(rgb(255, 255, 255) , rgb(4, 93, 134));
   background: -o-linear-gradient(rgb(255, 255, 255) , rgb(4, 93, 134));
   background: -moz-linear-gradient(rgb(255, 255, 255) , rgb(4, 93, 134));
-  background: linear-gradient(rgb(255, 255, 255) , rgb(4, 93, 134)); 
+  background: linear-gradient(rgb(255, 255, 255) , rgb(4, 93, 134));
+  background-clip: text; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -362,7 +365,8 @@ h3.sous-titre.partager {
   background: -webkit-linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637));
   background: -o-linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637));
   background: -moz-linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637));
-  background: linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637)); 
+  background: linear-gradient(rgb(255, 255, 255) , rgba(59, 59, 59, 0.637));
+  background-clip: text; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
