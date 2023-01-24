@@ -196,9 +196,9 @@ img.hasan-img{
   font-size: 70px;
   line-height: 1;
   letter-spacing: 0.5px;
-  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
-  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
-  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -webkit-linear-gradient(left, rgba(213, 154, 238, 0.89) , rgb(84, 191, 233));
+  background: -o-linear-gradient(right, rgba(213, 154, 238, 0.89) , rgb(84, 191, 233));
+  background: -moz-linear-gradient(right,rgba(213, 154, 238, 0.89) , rgb(84, 191, 233));
   background: linear-gradient(to right, rgba(213, 154, 238, 0.89) , rgb(84, 191, 233)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -292,10 +292,10 @@ img.hasan-img{
 }
 
 .title.white {
-  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
-  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
-  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.89) , rgb(255, 255, 255)); 
+  background: -webkit-linear-gradient(left, rgb(255, 255, 255) , rgb(255, 255, 255));
+  background: -o-linear-gradient(right, rgb(255, 255, 255) , rgb(255, 255, 255));
+  background: -moz-linear-gradient(right,rgb(255, 255, 255) , rgb(255, 255, 255));
+  background: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
 }
@@ -395,9 +395,9 @@ p.parag.realisation {
 }
 
 .contact {
-  background: -webkit-linear-gradient(left, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
-  background: -o-linear-gradient(right, rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
-  background: -moz-linear-gradient(right,rgba(158, 124, 173, 0.89) , rgb(87, 169, 207));
+  background: -webkit-linear-gradient(left, rgb(255, 255, 255) , rgba(65, 121, 75, 0.637));
+  background: -o-linear-gradient(right, rgb(255, 255, 255) , rgba(65, 121, 75, 0.637));
+  background: -moz-linear-gradient(right,rgb(255, 255, 255) , rgba(65, 121, 75, 0.637));
   background: linear-gradient(to right, rgb(255, 255, 255) , rgba(65, 121, 75, 0.637)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
