@@ -169,8 +169,8 @@ ul li{
 
 .toggle-button {
     position: absolute;
-    right: 1em;
-    top: 2em;
+    right: 1.5em;
+    top: 2.5em;
     display: none;
 }
 
@@ -179,6 +179,10 @@ ul li{
 
     .toggle-button {
         display: block;
+        position: fixed;
+        z-index: 500;
+        background-color: rgba(51, 51, 51, 0.404);
+        border-radius: 5px;
     }
 
     .navbar-links {
@@ -194,12 +198,12 @@ ul li{
 
     .navbar-links.activee {
         display: flex;
+        padding-top: 25px;
     }
 
     .nav-container {
         align-items: flex-start;
         justify-content: center;
-        gap: 10px;
         padding: 10px 10px;
     }
 
@@ -207,6 +211,9 @@ ul li{
 
     .nav-container .logo-div {
         padding-right: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
     .nav-container {
@@ -215,7 +222,7 @@ ul li{
     }
 
     .logo-div p {
-        font-size: 1.2rem;
-        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 500;
     }
 }
