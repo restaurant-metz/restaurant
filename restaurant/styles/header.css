@@ -179,10 +179,6 @@ ul li{
 
     .toggle-button {
         display: block;
-        position: fixed;
-        z-index: 500;
-        background-color: rgba(51, 51, 51, 0.404);
-        border-radius: 5px;
     }
 
     .navbar-links {
@@ -199,6 +195,7 @@ ul li{
     .navbar-links.activee {
         display: flex;
         padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .nav-container {
