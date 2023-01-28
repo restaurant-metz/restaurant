@@ -23,7 +23,7 @@
                     <img src="../medias/Hasan.jpg" alt="restaurant's logo" class="logo" >
                     <p>Restaurant l'Exemple</p>
                 </div>
-                <ul>
+                <ul class="navbar-links">
                     <li><a href="../pages/realisations.html" class="retour">Retour</a></li>
                     <li><a href="#restaurant">Restaurant</a></li>
                     <li><a href="#menu">Menus</a></li>
@@ -31,25 +31,27 @@
                     <li><a href="#galeries">Galeries</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
-                <div class="nav-buttons">
-                    <a href="tel:+33781301358">
-                        <div class="appel-button btns">
-                            <img src="images/appel.png" class="logo-telephone" alt="logo téléphone" >
-                            <button>Appelez</button>
-                        </div>
-                    </a>
-                    
-                    <a target="_blank" href="
-                        https://www.google.com/maps/place/Metz/@49.1048197,6.1612144,13z/data=!3m1!4b1!4m5!3m4!1s0x4794dc1b6074b6a9:0x596be4b635bba669!8m2!3d49.1193089!4d6.1757156">
-                        
-                        <div class="itineraire-button btns">
-                            <img src="images/maps.png" alt="logo itinéraire" class="logo-itineraire" >
-                            <button>Itinéraire</button>
-                        </div>
-                    </a>
-                </div>
+                <a href="#">
+                    <img src="images/menu.png" alt="menu" height="30" width="30" class="toggle-button">
+                </a>
             </div>
-        
+            <div class="nav-buttons">
+                <a href="tel:+33781301358">
+                    <div class="appel-button btns">
+                        <img src="images/appel.png" class="logo-telephone" alt="logo téléphone" >
+                        <button>Appelez</button>
+                    </div>
+                </a>
+                
+                <a target="_blank" href="
+                    https://www.google.com/maps/place/Metz/@49.1048197,6.1612144,13z/data=!3m1!4b1!4m5!3m4!1s0x4794dc1b6074b6a9:0x596be4b635bba669!8m2!3d49.1193089!4d6.1757156">
+                    
+                    <div class="itineraire-button btns">
+                        <img src="images/maps.png" alt="logo itinéraire" class="logo-itineraire" >
+                        <button>Itinéraire</button>
+                    </div>
+                </a>
+            </div>
             <div class="btn">
                <img src="images/fleche-haut.png" alt="bouton remonter tout en haut" class="icone" >
             </div>
@@ -258,6 +260,14 @@
     </div>
 
 </body>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('activee')
+    })
+</script>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);

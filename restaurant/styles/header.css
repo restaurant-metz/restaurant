@@ -1,12 +1,11 @@
 .nav-container {
     background-color: rgb(53, 53, 53);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 20px 20px;
     flex-wrap: wrap;
-    gap: 30px;
     height: auto;
 }
 
@@ -65,14 +64,13 @@
     cursor: pointer;
 }
 
-.nav-container ul {
+.navbar-links {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: 20px;
     align-items: center;
     justify-content: center;
-    padding-right: 30px;
+    padding: 0px 15px 0px 25px;
 }
 
 ul li{
@@ -134,54 +132,78 @@ ul li{
     z-index: 10;
 }
 
-@media screen and (max-width: 900px){
+.nav-buttons .itineraire-button {
+    position: fixed;
+    right: 0px;
+    transform: rotate(90deg);
+    padding-top: 11px;
+    bottom: 50vh;
+}
 
+.nav-buttons .appel-button {
+    position: fixed;
+    left: 0;
+    bottom: 47vh;
+    transform: rotate(-90deg);
+    padding-top: 11px;
+}
+
+.nav-buttons .appel-button img{
+
+    transform: rotate(90deg);
+}
+
+.nav-buttons .itineraire-button img{
+
+    transform: rotate(-90deg);
+}
+
+.nav-buttons button{
+    font-size: 1.2rem;
+}
+
+.btns {
+    width: 30px;
+    column-gap: 20%;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 1em;
+    top: 2em;
+    display: none;
+}
+
+@media screen and (max-width: 950px){
+
+
+    .toggle-button {
+        display: block;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        row-gap: 50px;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        display: none;
+    }
+
+    .navbar-links.activee {
+        display: flex;
+    }
 
     .nav-container {
+        align-items: flex-start;
         justify-content: center;
         gap: 10px;
         padding: 10px 10px;
     }
 
-    .nav-buttons .itineraire-button {
-        position: fixed;
-        right: 0px;
-        transform: rotate(90deg);
-        padding-top: 11px;
-        bottom: 50vh;
-    }
-
-    .nav-buttons .appel-button {
-        position: fixed;
-        left: 0;
-        bottom: 47vh;
-        transform: rotate(-90deg);
-        padding-top: 11px;
-    }
-
-    .nav-buttons .appel-button img{
-
-        transform: rotate(90deg);
-    }
-
-    .nav-buttons .itineraire-button img{
-
-        transform: rotate(-90deg);
-    }
-
-    .nav-buttons button{
-        font-size: 1.2rem;
-    }
-
-    .btns {
-        width: 30px;
-        column-gap: 20%;
-    }
-
-    .nav-container ul {
-        padding-right: 0px;
-        column-gap: 25px;
-    }
+    
 
     .nav-container .logo-div {
         padding-right: 0px;
@@ -193,7 +215,7 @@ ul li{
     }
 
     .logo-div p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         letter-spacing: 1px;
     }
 }
