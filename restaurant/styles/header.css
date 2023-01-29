@@ -21,7 +21,6 @@
 }
 
 .nav-buttons button {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
     animation: battement 2s infinite cubic-bezier(.77, 0, 0, 1);
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -30,13 +29,13 @@
     margin-left: 0px;
     border: none;
     border-radius: 100px;
-    background-color: #25D366;
+    background-color: #55db67f1;
     transition: all 0.3s ease-in;
 }
 
 @keyframes battement {
     to {
-      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 0 20px rgba(150, 150, 150, 0.15);
     }
 }
 
