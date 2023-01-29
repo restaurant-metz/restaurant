@@ -41,7 +41,7 @@ body {
 
 /* -------------------- NAVBAR ------------------------ */
 .header {
-  height: 48px;
+  padding: 15px 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +49,7 @@ body {
   position: fixed;
   right: 0;
   left: 0;
+  top: 0;
   z-index: 100;
 }
 
@@ -59,7 +60,6 @@ body {
   max-width: 1220px;
   height: 100%;
   width: 100%;
-  margin: 0 2vw;
 }
 
 .name {
@@ -79,7 +79,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 5px;
+  gap: 5px;
   flex-shrink: 0;
 }
 
@@ -102,27 +102,46 @@ body {
   opacity: 0.5;
 }
 
+.menu {
+  display: none;
+}
 
-@media screen and (max-width:833px) {
-  .header{
-    height: 48px;
-  }
-  .navbar {
-    margin-top: 0px;
+
+@media screen and (max-width:900px) {
+  ul.list {
+    padding-top: 25px;
+    width: 100%;
     flex-direction: column;
-    row-gap: 10px;
-    flex-shrink: 0;
+    row-gap: 33px;
+    display: none;
+  }
+
+  ul.list.activee {
+    display: flex;
+  }
+
+  ul.list li a {
+    font-size: 18px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
   }
 
-  .navbar ul {
-    flex-wrap: wrap;
+
+  .menu {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 8px;
+    width: 35px;
+    z-index: 500;
   }
 
-  .name {
-    display: none;
-  }
 }
+
 
 @media screen and (max-width:400px) {
   

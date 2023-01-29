@@ -59,12 +59,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a href="#">
+    <img src="medias/menu.png" alt="menu principal" class="menu">
+  </a>
   <header class="header">
     <nav class="navbar">
-      <a itemscope itemtype="http://schema.org/LocalBusiness" 
-      class="name" href="../index.html">
-        <span itemprop="name">Hasan BASBUNAR</span></a>
-      <ul>
+      <a class="name" href="../index.html">
+        <span>Hasan BASBUNAR</span></a>
+      <ul class="list">
         <li><a href="../index.html" class="active link">A propos</a></li>
         <li><a href="../pages/creation-site-web-metz.html" class="link">Services</a></li>
         <li><a href="../pages/realisations.html" class="link">Réalisations</a></li>
@@ -172,4 +174,12 @@
     </div>
   </footer>
 </body>
+<script>
+  const toggleButton = document.getElementsByClassName('menu')[0]
+  const navbarLinks = document.getElementsByClassName('list')[0]
+
+  toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('activee')
+})
+</script>
 </html>

@@ -13,20 +13,21 @@
   <title>Services de création de sites web sur mesure pour les commerçants de Metz</title>
 </head>
 <body>
-  
+    <a href="#">
+      <img src="../medias/menu.png" alt="menu principal" class="menu">
+    </a>
     <header class="header">
       <nav class="navbar">
-        <a href="https://www.hasanbasbunar.fr" class="name">Hasan BASBUNAR</a>
-        <ul>
-          <li><a href="../index.html" class="link">A propos</a></li>
-          <li><a href="../pages/creation-site-web-metz.html" class="link active">Services</a></li>
-          <li><a href="../pages/realisations.html"  class="link">Réalisations</a></li>
+        <a class="name" href="../index.html">
+          <span>Hasan BASBUNAR</span></a>
+        <ul class="list">
+          <li><a href="../index.html" class="active link">A propos</a></li>
+          <li><a href="../pages/creation-site-web-metz.html" class="link">Services</a></li>
+          <li><a href="../pages/realisations.html" class="link">Réalisations</a></li>
           <li><a href="../pages/contact.html" class="link">Contact</a></li>
-
         </ul>
       </nav>
     </header>
-  
 
     <main class="main">
       <a href="https://wa.me/+33781301358" target="_blank"><img src="../medias/whats-icon.svg" alt="icône whatsapp" class="whats-icon"></a>
@@ -125,4 +126,12 @@
     </footer>
 
 </body>
+<script>
+  const toggleButton = document.getElementsByClassName('menu')[0]
+  const navbarLinks = document.getElementsByClassName('list')[0]
+
+  toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('activee')
+})
+</script>
 </html>
