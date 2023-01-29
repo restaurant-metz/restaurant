@@ -47,3 +47,8 @@ body {
 .paiements img {
     width: 40px;
 }
+
+
+.maps-div {
+    z-index: 300;
+}
