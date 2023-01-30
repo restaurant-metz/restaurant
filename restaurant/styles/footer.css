@@ -1,26 +1,27 @@
 .footer {
-    background-color: #333;
     color: rgb(255, 255, 255); 
-    align-items: center; 
+    align-items: flex-start; 
     justify-content: center;
     display: flex; 
-    flex-direction: column; 
-    row-gap: 20px;
-    padding: 20px 20px;
+    flex-direction: column;
+    row-gap: 10px; 
     font-size: 15px;
+    height: 100%;
+    width: 100%;
 }
 
 .footer-div {
-    height: 80px;
+    background-color: #333;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
+    height: 100px;
+    padding-left: 25px;
 }
 
 .liens-footer-div{
     display: flex; 
-    width: 60%;
     justify-content: center;
     align-items: center;
 }

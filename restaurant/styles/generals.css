@@ -19,7 +19,7 @@ body {
 
 .body-div {
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .all-content {
@@ -41,7 +41,8 @@ body {
     z-index: 24;
 }
 .icone {
-    width: 65px;
+    width: 70px;
+    cursor: pointer;
 }
 
 .paiements img {

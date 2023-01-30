@@ -1,5 +1,5 @@
 .paiements {
-    background-color: beige; 
+    background-color: rgb(255, 236, 174); 
     padding: 50px 20px; 
     display: flex;
     flex-direction: column;
@@ -21,4 +21,55 @@
     align-items: center;
     width: 80%;
     max-width: 1000px;
+}
+
+
+.paiements button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    transition: all 0.2s;
+    cursor: pointer;
+    min-width: 130px;
+    font-size: 17px;
+}
+
+.paiements button:hover{
+    opacity: 0.8;
+}
+
+
+.paiements button:active {
+    background-color: rgb(130, 211, 75);
+    color: white;
+}
+
+button.uber {
+    background-color: black;
+    color: white;
+}
+
+button.uber span {
+    color: #06C167;
+}
+
+button.deliveroo {
+    background-color: #00c1b2;
+    color: white;
+}
+
+button.just-eat {
+    color: white;
+    background-color: #ff8000;
+}
+
+
+@media screen and (max-width:900px){
+    .paiements-logos.commander {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    
 }
