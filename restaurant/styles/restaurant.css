@@ -46,10 +46,9 @@
 .body-container .restaurant h1 {
     color: white;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 44px;
     line-height: 60px;
     z-index: 2;
     text-align: center;
-    width: 80%;
     max-width: 700px;
 }
